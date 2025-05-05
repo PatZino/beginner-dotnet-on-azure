@@ -4,6 +4,9 @@ name: Deploy MunsonPickles Web
 
 on:
   workflow_dispatch:
+
+env:
+  AZURE_WEBAPP_NAME: "app-munson-web-eastus-dev-001"
   
 jobs:
   build:
@@ -20,5 +23,14 @@ jobs:
       - name: Build
         run: dotnet build ./MunsonPickles.Web/MunsonPickles.Web.csproj --configuration Release --no-restore
 
+      # publish
+      - name: publish
+        run: dotnet publish ./MunsonPickles.Web/MunsonPickles.Web.csproj --configuration Release --output ./publish
 
-   
+      # deploy to azure
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{env.AZURE_WEBAPP_NAME}}
+          publish-profile: ${{secrets.WEB_PUBLISH_SECRET}}
+          package: ./publish
