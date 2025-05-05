@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MunsonPickles.Web", "Munson
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C500563A-616A-446D-820D-9289D0422C92}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{4A6DA339-EC47-49B6-A126-48512DEB0CD2}"
 	ProjectSection(SolutionItems) = preProject
 		deployweb.yml = deployweb.yml
 	EndProjectSection
@@ -27,7 +27,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C500563A-616A-446D-820D-9289D0422C92} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4A6DA339-EC47-49B6-A126-48512DEB0CD2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E28577A-2713-407B-9FB6-3A1740ABFB64}
