@@ -16,9 +16,9 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - name: Install dependencies
-        run: dotnet restore munsonpickles.sln
+        run: dotnet restore ./MunsonPickles.Web/MunsonPickles.Web.csproj
       - name: Build
-        run: dotnet build munsonpickles.sln --configuration Release --no-restore
+        run: dotnet build ./MunsonPickles.Web/MunsonPickles.Web.csproj --configuration Release --no-restore
 
 
    
